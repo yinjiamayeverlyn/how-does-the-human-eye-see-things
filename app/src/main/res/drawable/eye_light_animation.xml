@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/simulation1" android:duration="300" />
+    <item android:drawable="@drawable/simulation2" android:duration="300" />
+    <item android:drawable="@drawable/simulation3" android:duration="300" />
+    <item android:drawable="@drawable/simulation4" android:duration="300" />
+    <item android:drawable="@drawable/simulation5" android:duration="300" />
+    <item android:drawable="@drawable/simulation6" android:duration="300" />
+    <item android:drawable="@drawable/simulation7" android:duration="300" />
+</animation-list>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- All your existing views go here unchanged -->
+        <!-- Line Illusion Section -->
+        <TextView
+            android:id="@+id/lineillusion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Look at the picture below. Which line do you think is longer — the top one or the bottom one?"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="start"
+            android:paddingBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/imagelineillusion"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/line_fact"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Hint 1 Toggle -->
+        <TextView
+            android:id="@+id/showHint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_hint_text"
+            android:textColor="@color/hintColor"
+            android:fontFamily="@font/baloo2_bold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/hint1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:gravity="center"
+            android:text="Surprise! They’re actually the same length! Your eyes just got tricked!"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/hintColor"
+            android:visibility="gone" />
+
+
+        <!-- Divider line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorPrimary" />
+        <!-- Moving Snake Section -->
+        <TextView
+            android:id="@+id/movingsnake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Look at the snake carefully. Do you see it moving?"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="start"
+            android:paddingTop="30dp"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imagemovingsnake"
+            android:layout_width="300dp"
+            android:layout_height="210dp"
+            android:src="@drawable/moving_snack"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Hint 2 Toggle -->
+        <TextView
+            android:id="@+id/showHint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_hint_text"
+            android:textColor="@color/hintColor"
+            android:fontFamily="@font/baloo2_bold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/hint2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:gravity="center"
+            android:text="Whoa! It looks like it's moving, right? But guess what? It's not moving at all! Your brain is just being fooled by the colors and shapes."
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/hintColor"
+            android:visibility="gone" />
+
+
+        <!-- Divider line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorPrimary" />
+
+        <!-- Troxler Effect Section -->
+        <TextView
+            android:id="@+id/troxlereffect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stare at the red dot in the middle. Keep looking for about 15 seconds... Don't look away!"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="start"
+            android:paddingTop="30dp"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imagetroxlereffect"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/troxler_effect"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Hint 3 Toggle -->
+        <TextView
+            android:id="@+id/showHint3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_hint_text"
+            android:fontFamily="@font/baloo2_bold"
+            android:textColor="@color/hintColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/hint3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Did the blue ring start to fade or disappear? That’s called the Troxler Effect! Your brain stops noticing things when you stare too long in one spot."
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/hintColor"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

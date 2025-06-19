@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Animation placeholder -->
+    <ImageView
+        android:id="@+id/animationImageView"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:src="@drawable/simulation1"
+        android:layout_gravity="center" />
+
+    <!-- Play Button -->
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/play"
+        android:contentDescription="Play Animation"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"/>
+
+    <!-- Friendly Explanation Text -->
+    <TextView
+        android:id="@+id/explanationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Light enters the eye, travels through it, and sends a message to the brain!"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:paddingTop="16dp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/nunito_bold"/>
+</LinearLayout>

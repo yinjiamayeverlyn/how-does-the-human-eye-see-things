@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watch this fun video to understand how your eyes work!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:paddingTop="24dp"
+            android:fontFamily="@font/baloo2_bold"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="8dp"
+            android:lineSpacingExtra="-10dp"/>
+
+        <FrameLayout
+            android:id="@+id/videoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <!-- Divider line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let’s explore the parts of the eye!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:paddingTop="30dp"
+            android:fontFamily="@font/baloo2_bold"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="8dp"
+            android:lineSpacingExtra="-10dp"/>
+
+        <!-- Part 1: Cornea -->
+        <ImageView
+            android:id="@+id/imagePart1"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:src="@drawable/part1"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cornea: The clear front layer that helps focus light."
+            android:textSize="16sp"
+            android:gravity="start"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="20dp"/>
+
+        <!-- Part 2: Pupil -->
+        <ImageView
+            android:id="@+id/imagePart2"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:src="@drawable/part2"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pupil: The black circle that lets light into the eye."
+            android:textSize="16sp"
+            android:gravity="start"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="20dp"/>
+
+        <!-- Part 3: Iris -->
+        <ImageView
+            android:id="@+id/imagePart3"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:src="@drawable/part3"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iris: The colored part that controls pupil size."
+            android:textSize="16sp"
+            android:gravity="start"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="20dp"/>
+
+        <!-- Part 4: Lens -->
+        <ImageView
+            android:id="@+id/imagePart4"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:src="@drawable/part4"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lens: Focuses light onto the back of the eye."
+            android:textSize="16sp"
+            android:gravity="start"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="20dp"/>
+
+        <!-- Part 5: Retina -->
+        <ImageView
+            android:id="@+id/imagePart5"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:src="@drawable/part5"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retina: Turns light into signals for the brain."
+            android:textSize="16sp"
+            android:gravity="start"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="26dp"/>
+    </LinearLayout>
+</ScrollView>

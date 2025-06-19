@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animated_background"
+    android:padding="24dp">
+
+    <!-- Centered container -->
+    <LinearLayout
+        android:id="@+id/center_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How Does the Human Eye See Things?"
+            android:textColor="@color/colorSecondary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingExtra="-10dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/baloo2_bold" />
+
+        <!-- Start Learning Button -->
+        <Button
+            android:id="@+id/btnLearn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Learning"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorOnPrimary"
+            android:onClick="onLearnClick"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="16sp"/>
+
+        <!-- Interactive Test Button -->
+        <Button
+            android:id="@+id/btnInteractiveTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interactive Test"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorOnPrimary"
+            android:onClick="onInteractiveTestClick"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="16sp"/>
+
+        <!-- Quiz Button -->
+        <Button
+            android:id="@+id/btnQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take a Quiz"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorOnPrimary"
+            android:onClick="onQuizClick"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="16sp"/>
+
+        <!-- Explore Eye in AR Button -->
+        <Button
+            android:id="@+id/btnExploreAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore Eye in AR"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorOnPrimary"
+            android:onClick="onExploreARClick"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btnAudio"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_volume"
+        android:contentDescription="Adjust volume"
+        android:background="@drawable/circle_white"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:onClick="onAudioClick"/>
+
+</RelativeLayout>

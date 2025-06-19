@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dragDropRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animated_background"
+    android:padding="16dp">
+
+    <!-- Top buttons: Previous (left) and Audio (right) -->
+    <ImageButton
+        android:id="@+id/btnPrev"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_prev"
+        android:contentDescription="Previous"
+        android:background="@drawable/circle_white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:onClick="onPrevClick" />
+
+    <ImageButton
+        android:id="@+id/btnAudio"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_volume"
+        android:contentDescription="Audio"
+        android:background="@drawable/circle_white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:onClick="onAudioClick" />
+
+    <!-- Main content below the buttons -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_below="@id/btnPrev"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now is to test you! Drag the answer to the correspond part"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="12dp"
+        android:lineSpacingExtra="-10dp"
+        android:textColor="@color/colorSecondary"
+        android:fontFamily="@font/baloo2_bold"/>
+
+    <ImageView
+        android:id="@+id/draganddropimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/interactive_test"
+        android:contentDescription="Interactive Test Image"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"/>
+
+    <!-- Drop Target Slots 1-5 -->
+    <LinearLayout
+        android:id="@+id/slotsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Slot 1 -->
+        <FrameLayout
+            android:id="@+id/slot1"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#DDDDDD"
+            android:layout_marginEnd="2dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/slot1Label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="10dp"
+                android:text="1"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/colorPrimary"/>
+        </FrameLayout>
+
+        <!-- Slot 2 -->
+        <FrameLayout
+            android:id="@+id/slot2"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#DDDDDD"
+            android:layout_marginEnd="2dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/slot2Label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="10dp"
+                android:text="2"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/colorPrimary"/>
+        </FrameLayout>
+
+        <!-- Slot 2 -->
+        <FrameLayout
+            android:id="@+id/slot3"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#DDDDDD"
+            android:layout_marginEnd="2dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/slot3Label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="10dp"
+                android:text="3"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/colorPrimary"/>
+        </FrameLayout>
+
+        <!-- Slot 4 -->
+        <FrameLayout
+            android:id="@+id/slot4"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#DDDDDD"
+            android:layout_marginEnd="2dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/slot4Label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="10dp"
+                android:text="4"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/colorPrimary"/>
+        </FrameLayout>
+
+        <!-- Slot 5 -->
+        <FrameLayout
+            android:id="@+id/slot5"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#DDDDDD"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/slot5Label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="10dp"
+                android:text="5"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/colorPrimary"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!-- Draggable Answer Boxes -->
+    <LinearLayout
+        android:id="@+id/answersContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- Repeat this for each draggable answer -->
+        <TextView
+            android:id="@+id/answer1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorOnPrimary"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Lens"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:tag="1"
+            android:fontFamily="@font/nunito_bold"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/answer2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorOnPrimary"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Retina"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:tag="2"
+            android:fontFamily="@font/nunito_bold"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/answer3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorOnPrimary"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Cornea"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:tag="3"
+            android:fontFamily="@font/nunito_bold"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/answer4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorOnPrimary"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Pupil"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:tag="4"
+            android:fontFamily="@font/nunito_bold"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/answer5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorOnPrimary"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Iris"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:tag="5"
+            android:fontFamily="@font/nunito_bold"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/submitButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/submitbtn"
+                android:background="@null"
+                android:contentDescription="Submit"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="20dp"
+                android:onClick="onSubmitClick" />
+
+            <ImageButton
+                android:id="@+id/resetButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/resetbtn"
+                android:background="@null"
+                android:contentDescription="Reset"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:onClick="onResetClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

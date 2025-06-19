@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/answer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorOnPrimary"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Lens"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:tag="1"
+        android:fontFamily="@font/nunito_bold"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/answer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorOnPrimary"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Retina"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:tag="2"
+        android:fontFamily="@font/nunito_bold"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/answer3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorOnPrimary"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Cornea"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:tag="3"
+        android:fontFamily="@font/nunito_bold"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/answer4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorOnPrimary"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Pupil"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:tag="4"
+        android:fontFamily="@font/nunito_bold"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/answer5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorOnPrimary"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Iris"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:tag="5"
+        android:fontFamily="@font/nunito_bold"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</merge>

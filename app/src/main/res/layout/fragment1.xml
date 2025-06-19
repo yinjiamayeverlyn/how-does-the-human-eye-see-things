@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Existing Introductory Text -->
+        <TextView
+            android:id="@+id/explanationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light is what helps us see. Without light, everything looks dark!"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="start"
+            android:paddingBottom="16dp" />
+
+        <!-- Scene -->
+        <ImageView
+            android:id="@+id/imageScene"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/room_dark"
+            android:scaleType="fitCenter" />
+
+        <!-- Switch -->
+        <ImageView
+            android:id="@+id/imageSwitch"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/switch_off"
+            android:contentDescription="Light Switch"
+            android:layout_marginTop="10dp" />
+
+        <!-- First Hint -->
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:gravity="center"
+            android:text="Click the switch to see what happens!"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/hintColor" />
+
+        <!-- Divider line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorPrimary" />
+
+        <!-- Extra Info Text -->
+        <TextView
+            android:id="@+id/moreInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We need light to see—but what if there's too much? Try the slider!"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="start"
+            android:paddingTop="30dp"
+            android:textColor="@color/colorPrimary" />
+
+        <!-- Classroom Image -->
+        <ImageView
+            android:id="@+id/imageClassroom"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/classroom"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp" />
+
+        <!-- Brightness Slider -->
+        <SeekBar
+            android:id="@+id/brightnessSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="0" />
+
+        <!-- Second Hint -->
+        <TextView
+            android:id="@+id/brightnessHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Too much light can also be hard to see!"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/hintColor" />
+
+    </LinearLayout>
+</ScrollView>
