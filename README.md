@@ -25,7 +25,6 @@ git clone https://github.com/yinjiamayeverlyn/how-does-the-human-eye-see-things.
 
 Or download it as a ZIP and extract it.
 
----
 
 ### Step 2: Open in Android Studio
 
@@ -71,6 +70,7 @@ Eye Illustration: [AnatomyTool.org - Servier Drawing Eye](https://anatomytool.or
 
 3D Model: [Sketchfab - Realistic Human Eye](https://sketchfab.com/3d-models/realistic-human-eye-deb290d67f5e48c69e0955056cbd9576)
 
+---
 
 ### License
 
