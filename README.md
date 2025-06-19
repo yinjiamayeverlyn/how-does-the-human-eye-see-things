@@ -50,7 +50,7 @@ Let Gradle sync and finish building
 #### Option 2: Virtual Device (Not Recommended)
 
 - Most virtual devices do not support ARCore
-- You may use an emulator for basic non-AR features (learning pages, quizzes), but AR will not work
+- You may use an emulator for basic non-AR features (like the learning pages, quiz, and drag-and-drop interaction), but AR will not work
 - For testing non-AR features (like the learning lessons, quiz, and drag-and-drop interaction), you can use a stable emulator setup:
   - Device: Pixel 4
   - API Level: 30 (Android 11) or above
