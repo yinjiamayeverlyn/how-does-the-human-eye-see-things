@@ -68,6 +68,41 @@ Install it on a real Android device with ARCore support for the full experience.
 
 ---
 
+## Technologies and Libraries Used
+
+This project integrates various Android libraries and APIs to deliver interactive media content, AR experiences, and visual learning tools.
+
+### Core Tools
+
+- **Android Studio** – Project developed using Kotlin + Java mix
+- **Min SDK Version**: 24 (Android 7.0)
+- **Target SDK Version**: 35
+
+---
+
+### Key Libraries & Dependencies
+
+| Feature | Library/API | Version |
+|--------|-------------|---------|
+| Image processing | [OpenCV for Android](https://opencv.org/releases/) | `4.11.0` (via native SDK) |
+| Augmented Reality | `com.gorisse.thomas.sceneform:ux` | `1.23.0` |
+| ARCore engine | `com.google.ar:core` | `1.31.0` |
+| Audio playback | `MediaPlayer`, `AudioManager` (Android native) | Built-in |
+| Video content | `VideoView`, `MediaController` | Built-in |
+| Interactive UI | Drag-and-Drop API, XML Layouts | Android SDK |
+| UI Design | Material Components & AndroidX |
+
+---
+
+### Gradle Snippet (for reference)
+
+```kotlin
+implementation("com.gorisse.thomas.sceneform:ux:1.23.0")
+implementation("com.google.ar:core:1.31.0")
+```
+
+---
+
 ### Credits & Resources
 Video: [NEI for Kids – How the Eye Works](https://www.nei.nih.gov/learn-about-eye-health/nei-for-kids)
 
